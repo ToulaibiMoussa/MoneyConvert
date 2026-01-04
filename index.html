@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>MoneyConvert</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>MoneyConvert</h1>
+            <p>Votre Calculatrice de conversion en ligne</p>
+            <form>
+                <input type="number" name="number" id="number" min="0"><br>
+                <label for="devise">Choisissez une conversion: </label><br>
+                <select name="devise" id="devise">
+                    <option value="ariaryToEuro" id="ariaryToEuro">Ariary → Euro</option>
+                    <option value="euroToAriary" id="euroToAriary">Euro → Ariary</option>
+                    <option value="ariaryToKMF" id="ariaryToKMF">Ariary → KMF</option>
+                    <option value="KMFToAriary" id="KMFToAriary">KMF → Ariary</option>
+                    <option value="KMFToEuro" id="KMFToEuro">KMF → Euro</option>
+                    <option value="EuroToKMF" id="EuroToKMF">Euro → KMF</option>
+                </select><br>
+                <button type="button" onclick="convert()">Convertir</button>
+                <p id="result"></p>
+            </form>
+        </div>
+        <script src="index.js"></script>
+    </body>
+
+</html>
